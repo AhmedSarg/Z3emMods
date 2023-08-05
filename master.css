@@ -3,14 +3,15 @@
 }
 :root {
     /* --primaryColor: #359165; */
-    --primaryColor: #157145;
+    --primaryColor: #050105;
+    /* --primaryColor: #157145; */
     --secondaryColor: #57A773;
     --white: #F1FAFF;
     --offWhite: #D1FAFF;
     --black: #292F36;
 }
 body {
-    background-color: var(--primaryColor);
+    background-color: var(--secondaryColor);
 }
 header {
     background-color: var(--black);
