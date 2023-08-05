@@ -5,12 +5,12 @@ let liRequest = lis[2]
 let liAbout = lis[3]
 let appsShow = document.querySelectorAll(".apps.show")[0]
 let myApps = document.getElementsByClassName("apps container")[0]
-let appImg1 = document.querySelectorAll(".app.img")[0]
-let appImg2 = document.querySelectorAll(".app.img")[1]
+let appItem1 = document.querySelectorAll(".app.item")[0]
+let appItem2 = document.querySelectorAll(".app.item")[1]
 let gamesShow = document.querySelectorAll(".games.show")[0]
 let myGames = document.getElementsByClassName("games container")[0]
-let gameImg1 = document.querySelectorAll(".game.img")[0]
-let gameImg2 = document.querySelectorAll(".game.img")[1]
+let gameItem1 = document.querySelectorAll(".game.item")[0]
+let gameItem2 = document.querySelectorAll(".game.item")[1]
 
 liApps.onclick = function () {
     console.log("Apps Page")
@@ -26,32 +26,33 @@ liAbout.onclick = function () {
     window.location.assign("/pages/about.html")
 }
 
+let animationTime = 1000
 appsShow.onclick = function () {
     if (myApps.style.display == "none") {
-        myApps.classList.add("startAnimationExpand")
-        appImg1.classList.add("startAnimationExpand")
-        appImg2.classList.add("startAnimationExpand")
+        myApps.classList.add("startContainerAnimationExpand")
+        appItem1.classList.add("startItemAnimationExpand")
+        appItem2.classList.add("startItemAnimationExpand")
         myApps.style.display = "flex"
         setTimeout(function () {
-            myApps.classList.remove("startAnimationExpand")
-            appImg1.classList.remove("startAnimationExpand")
-            appImg2.classList.remove("startAnimationExpand")
-        }, 1000)
+            myApps.classList.remove("startContainerAnimationExpand")
+            appItem1.classList.remove("startItemAnimationExpand")
+            appItem2.classList.remove("startItemAnimationExpand")
+        }, animationTime)
         appsShow.classList.remove("fa-chevron-up")
         appsShow.classList.add("fa-chevron-down")
     }
     else {
-        myApps.classList.add("startAnimationHide")
-        appImg1.classList.add("startAnimationHide")
-        appImg2.classList.add("startAnimationHide")
+        myApps.classList.add("startContainerAnimationHide")
+        appItem1.classList.add("startItemAnimationHide")
+        appItem2.classList.add("startItemAnimationHide")
         setTimeout(function () {
             myApps.style.display = "none"
-        }, 800)
+        }, animationTime * 0.8)
         setTimeout(function () {
-            myApps.classList.remove("startAnimationHide")
-            appImg1.classList.remove("startAnimationHide")
-            appImg2.classList.remove("startAnimationHide")
-        }, 1000)
+            myApps.classList.remove("startContainerAnimationHide")
+            appItem1.classList.remove("startItemAnimationHide")
+            appItem2.classList.remove("startItemAnimationHide")
+        }, animationTime)
         appsShow.classList.remove("fa-chevron-down")
         appsShow.classList.add("fa-chevron-up")
     }
@@ -59,30 +60,30 @@ appsShow.onclick = function () {
 
 gamesShow.onclick = function () {
     if (myGames.style.display == "none") {
-        myGames.classList.add("startAnimationExpand")
-        gameImg1.classList.add("startAnimationExpand")
-        gameImg2.classList.add("startAnimationExpand")
+        myGames.classList.add("startContainerAnimationExpand")
+        gameItem1.classList.add("startItemAnimationExpand")
+        gameItem2.classList.add("startItemAnimationExpand")
         myGames.style.display = "flex"
         setTimeout(function () {
-            myGames.classList.remove("startAnimationExpand")
-            gameImg1.classList.remove("startAnimationExpand")
-            gameImg2.classList.remove("startAnimationExpand")
-        }, 1000)
+            myGames.classList.remove("startContainerAnimationExpand")
+            gameItem1.classList.remove("startItemAnimationExpand")
+            gameItem2.classList.remove("startItemAnimationExpand")
+        }, animationTime)
         gamesShow.classList.remove("fa-chevron-up")
         gamesShow.classList.add("fa-chevron-down")
     }
     else {
-        myGames.classList.add("startAnimationHide")
-        gameImg1.classList.add("startAnimationHide")
-        gameImg2.classList.add("startAnimationHide")
+        myGames.classList.add("startContainerAnimationHide")
+        gameItem1.classList.add("startItemAnimationHide")
+        gameItem2.classList.add("startItemAnimationHide")
         setTimeout(function () {
             myGames.style.display = "none"
-        }, 800)
+        }, animationTime * 0.8)
         setTimeout(function () {
-            myGames.classList.remove("startAnimationHide")
-            gameImg1.classList.remove("startAnimationHide")
-            gameImg2.classList.remove("startAnimationHide")
-        }, 1000)
+            myGames.classList.remove("startContainerAnimationHide")
+            gameItem1.classList.remove("startItemAnimationHide")
+            gameItem2.classList.remove("startItemAnimationHide")
+        }, animationTime)
         gamesShow.classList.remove("fa-chevron-down")
         gamesShow.classList.add("fa-chevron-up")
     }
