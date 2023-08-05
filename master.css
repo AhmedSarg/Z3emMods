@@ -3,15 +3,15 @@
 }
 :root {
     /* --primaryColor: #359165; */
-    --primaryColor: #050105;
+    --primaryColor: #353135;
     /* --primaryColor: #157145; */
     --secondaryColor: #57A773;
     --white: #F1FAFF;
-    --offWhite: #D1FAFF;
+    --offWhite: #DFDFDF;
     --black: #292F36;
 }
 body {
-    background-color: var(--secondaryColor);
+    background-color: var(--offWhite);
 }
 header {
     background-color: var(--black);
@@ -57,7 +57,7 @@ li:hover {
     margin-top: 40px;
 }
 .title {
-    color: var(--white);
+    color: var(--black);
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -65,7 +65,7 @@ li:hover {
 .show {
     margin-right: 10px;
     font-size: 22px;
-    color: var(--white);
+    color: var(--black);
 }
 .container {
     display: flex;
