@@ -36,10 +36,10 @@ ul {
 }
 li {
     color: var(--white);
-    margin-right: calc((100% - 20px - (50px * 4)) / 8);
-    margin-left: calc((100% - 20px - (50px * 4)) / 8);
+    margin-right: calc((100% - 20px - (60px * 5)) / 8);
+    margin-left: calc((100% - 20px - (60px * 5)) / 8);
     font-size: 14px;
-    width: 50px;
+    width: 60px;
     height: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;

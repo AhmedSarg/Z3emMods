@@ -1,8 +1,9 @@
 let lis = document.querySelectorAll("li")
-let liApps = lis[0]
-let liGames = lis[1]
-let liRequest = lis[2]
-let liAbout = lis[3]
+let liHome = lis[0]
+let liApps = lis[1]
+let liGames = lis[2]
+let liRequest = lis[3]
+let liAbout = lis[4]
 let appsShow = document.querySelectorAll(".apps.show")[0]
 let myApps = document.getElementsByClassName("apps container")[0]
 let appItem1 = document.querySelectorAll(".app.item")[0]
@@ -12,6 +13,9 @@ let myGames = document.getElementsByClassName("games container")[0]
 let gameItem1 = document.querySelectorAll(".game.item")[0]
 let gameItem2 = document.querySelectorAll(".game.item")[1]
 
+liHome.addEventListener("click", function () {
+    window.location.assign("/home.html")
+})
 liApps.addEventListener("click", function () {
     window.location.assign("/apps.html")
 })
