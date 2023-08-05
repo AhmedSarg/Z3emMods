@@ -13,17 +13,16 @@ let gameItem1 = document.querySelectorAll(".game.item")[0]
 let gameItem2 = document.querySelectorAll(".game.item")[1]
 
 liApps.addEventListener("click", function () {
-    console.log("Apps Page")
-    window.location.assign("/pages/apps.html")
+    window.location.assign("/apps.html")
 })
 liGames.addEventListener("click", function () {
-    window.location.assign("/pages/games.html")
+    window.location.assign("/games.html")
 })
 liRequest.addEventListener("click", function () {
-    window.location.assign("/pages/request.html")
+    window.location.assign("/request.html")
 })
 liAbout.addEventListener("click", function () {
-    window.location.assign("/pages/about.html")
+    window.location.assign("/about.html")
 })
 
 let animationTime = 1000
