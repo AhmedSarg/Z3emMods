@@ -12,22 +12,22 @@ let myGames = document.getElementsByClassName("games container")[0]
 let gameItem1 = document.querySelectorAll(".game.item")[0]
 let gameItem2 = document.querySelectorAll(".game.item")[1]
 
-liApps.onclick = function () {
+liApps.addEventListener("click", function () {
     console.log("Apps Page")
     window.location.assign("/pages/apps.html")
-}
-liGames.onclick = function () {
+})
+liGames.addEventListener("click", function () {
     window.location.assign("/pages/games.html")
-}
-liRequest.onclick = function () {
+})
+liRequest.addEventListener("click", function () {
     window.location.assign("/pages/request.html")
-}
-liAbout.onclick = function () {
+})
+liAbout.addEventListener("click", function () {
     window.location.assign("/pages/about.html")
-}
+})
 
 let animationTime = 1000
-appsShow.onclick = function () {
+appsShow.addEventListener("click", function () {
     if (myApps.style.display == "none") {
         myApps.classList.add("startContainerAnimationExpand")
         appItem1.classList.add("startItemAnimationExpand")
@@ -56,9 +56,9 @@ appsShow.onclick = function () {
         appsShow.classList.remove("fa-chevron-down")
         appsShow.classList.add("fa-chevron-up")
     }
-}
+})
 
-gamesShow.onclick = function () {
+gamesShow.addEventListener("click", function () {
     if (myGames.style.display == "none") {
         myGames.classList.add("startContainerAnimationExpand")
         gameItem1.classList.add("startItemAnimationExpand")
@@ -87,4 +87,4 @@ gamesShow.onclick = function () {
         gamesShow.classList.remove("fa-chevron-down")
         gamesShow.classList.add("fa-chevron-up")
     }
-}
+})
