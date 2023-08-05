@@ -4,7 +4,9 @@ let liGames = lis[1]
 let liRequest = lis[2]
 let liAbout = lis[3]
 let appsShow = document.querySelectorAll(".apps.show")[0]
+    let myApps = document.getElementsByClassName("apps container")[0]
 let gamesShow = document.querySelectorAll(".games.show")[0]
+let myGames = document.getElementsByClassName("games container")[0]
 
 liApps.onclick = function () {
     console.log("Apps Page")
@@ -21,27 +23,47 @@ liAbout.onclick = function () {
 }
 
 appsShow.onclick = function () {
-    if (document.getElementsByClassName("apps container")[0].style.display == "none") {
-        document.getElementsByClassName("apps container")[0].style.display = "flex"
-        document.querySelectorAll(".apps.show")[0].classList.remove("fa-chevron-up")
-        document.querySelectorAll(".apps.show")[0].classList.add("fa-chevron-down")
+    if (myApps.style.display == "none") {
+        myApps.classList.add("startAnimationExpand")
+        myApps.style.display = "flex"
+        setTimeout(function () {
+            myApps.classList.remove("startAnimationExpand")
+        }, 1000)
+        appsShow.classList.remove("fa-chevron-up")
+        appsShow.classList.add("fa-chevron-down")
     }
     else {
-        document.getElementsByClassName("apps container")[0].style.display = "none"
-        document.querySelectorAll(".apps.show")[0].classList.remove("fa-chevron-down")
-        document.querySelectorAll(".apps.show")[0].classList.add("fa-chevron-up")
+        myApps.classList.add("startAnimationHide")
+        setTimeout(function () {
+            myApps.style.display = "none"
+        }, 800)
+        setTimeout(function () {
+            myApps.classList.remove("startAnimationHide")
+        }, 1000)
+        appsShow.classList.remove("fa-chevron-down")
+        appsShow.classList.add("fa-chevron-up")
     }
 }
 
 gamesShow.onclick = function () {
-    if (document.getElementsByClassName("games container")[0].style.display == "none") {
-        document.getElementsByClassName("games container")[0].style.display = "flex"
-        document.querySelectorAll(".games.show")[0].classList.remove("fa-chevron-up")
-        document.querySelectorAll(".games.show")[0].classList.add("fa-chevron-down")
+    if (myGames.style.display == "none") {
+        myGames.classList.add("startAnimationExpand")
+        myGames.style.display = "flex"
+        setTimeout(function () {
+            myGames.classList.remove("startAnimationExpand")
+        }, 1000)
+        gamesShow.classList.remove("fa-chevron-up")
+        gamesShow.classList.add("fa-chevron-down")
     }
     else {
-        document.getElementsByClassName("games container")[0].style.display = "none"
-        document.querySelectorAll(".games.show")[0].classList.remove("fa-chevron-down")
-        document.querySelectorAll(".games.show")[0].classList.add("fa-chevron-up")
+        myGames.classList.add("startAnimationHide")
+        setTimeout(function () {
+            myGames.style.display = "none"
+        }, 800)
+        setTimeout(function () {
+            myGames.classList.remove("startAnimationHide")
+        }, 1000)
+        gamesShow.classList.remove("fa-chevron-down")
+        gamesShow.classList.add("fa-chevron-up")
     }
 }
