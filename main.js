@@ -60,7 +60,6 @@ appsShow.addEventListener("click", function () {
         appsShow.classList.add("fa-chevron-up")
     }
 })
-
 gamesShow.addEventListener("click", function () {
     if (myGames.style.display == "none") {
         myGames.classList.add("startContainerAnimationExpand")
