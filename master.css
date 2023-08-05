@@ -120,22 +120,28 @@ h2 {
 }
 
 @keyframes expand {
-    from {
+    0% {
         opacity: 0%;
         height: 0px;
     }
-    to {
+    70% {
+        opacity: 100%;
+    }
+    100% {
         opacity: 100%;
         height: 500px;
     }
 }
 
 @keyframes hidee {
-    from {
+    0% {
         opacity: 100%;
         height: 500px;
     }
-    to {
+    70% {
+        opacity: 0%;
+    }
+    100% {
         opacity: 0%;
         height: 0px;
     }
