@@ -93,8 +93,7 @@ li:hover {
     flex-direction: column;
     justify-content: flex-end;
     background-color: var(--white);
-    height: 276px;  
-    width: 350px;
+    height: 276px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 5px;
