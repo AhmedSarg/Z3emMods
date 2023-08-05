@@ -2,8 +2,8 @@
     margin: 0px;
 }
 :root {
-    --primaryColor: #359165;
-    /* --primaryColor: #157145; */
+    /* --primaryColor: #359165; */
+    --primaryColor: #157145;
     --secondaryColor: #57A773;
     --white: #F1FAFF;
     --offWhite: #D1FAFF;
