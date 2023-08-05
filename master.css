@@ -49,8 +49,6 @@ li:hover {
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
     animation-play-state: running;
-    font-weight: bold;
-    font-size: 16px;
 }
 @keyframes toolbarHover {
     from {
