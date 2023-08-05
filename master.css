@@ -45,8 +45,22 @@ li {
     text-align: center;
 }
 li:hover {
+    animation-name: toolbarHover;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
     font-weight: bold;
     font-size: 16px;
+}
+@keyframes toolbarHover {
+    from {
+        font-weight: normal;
+        font-size: 14px;
+    }
+    to {
+        font-weight: bold;
+        font-size: 16px;
+    }
 }
 .tools {
     display: flex;
@@ -115,14 +129,14 @@ h2 {
     animation-name: expandContainer;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 .startContainerAnimationHide {
     animation-name: hideContainer;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 @keyframes expandContainer {
@@ -159,14 +173,14 @@ h2 {
     animation-name: expandItem;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 .startItemAnimationHide {
     animation-name: hideItem;
     animation-duration: 1s;
     animation-iteration-count: 1;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 @keyframes expandItem {
