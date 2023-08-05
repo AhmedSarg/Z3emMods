@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+}
+:root {
+    --primaryColor: #157145;
+    --secondaryColor: #57A773;
+    --white: #F1FAFF;
+    --offWhite: #D1FAFF;
+    --black: #292F36;
+}
+body {
+    background-color: var(--primaryColor);
+}
+header {
+    background-color: var(--black);
+    padding: 10px;
+    align-items: center;
+}
+.logo {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    color: var(--white);
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 0px;
+    justify-content: center;
+}
+li {
+    color: var(--white);
+    margin-right: calc((100% - 20px - (50px * 4)) / 8);
+    margin-left: calc((100% - 20px - (50px * 4)) / 8);
+    font-size: 14px;
+    width: 50px;
+    height: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+li:hover {
+    font-weight: bold;
+    font-size: 16px;
+}
+.tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.title {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.show {
+    margin-right: 10px;
+    font-size: 22px;
+    color: var(--white);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    padding-top: 0px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.imgtemp {
+    height: 80%;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    background-color: var(--black);
+    text-align: start;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+h2 {
+    margin-left: 20px;
+    color: var(--white);
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
