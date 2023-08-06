@@ -1,5 +1,5 @@
-//let domain = "z3emmods.netlify.app"
-let domain = "http://127.0.0.1:5500";
+let domain = "z3emmods.netlify.app"
+//let domain = "http://127.0.0.1:5500";
 let lis = document.querySelectorAll("li");
 let liHome = lis[0];
 let liApps = lis[1];
