@@ -24,17 +24,18 @@ document.head.appendChild(title);
 
 let counterText = document.querySelector(".counter");
 let btn = document.querySelector(".skip");
-let i = 29;
+let i = 1;
 let counter = setInterval(() => {
   counterText.textContent = i;
   if (i === 0) {
     clearInterval(counter);
     btn.style.opacity = 1;
     btn.textContent = "Skip";
-    sessionStorage.setItem("id", Rand)
+    let id = Math.random().toFixed(3) * 1000;
+    sessionStorage.setItem("id", id);
     btn.addEventListener("click", function () {
-      console.log("Clicked");
       btn.classList.add("buttonClickAnimation");
+      location.href(`/ads_page_1.html?id=${id}`)
       setTimeout(() => {
         btn.classList.remove("buttonClickAnimation");
       }, 2000);
