@@ -118,6 +118,64 @@ h2 {
     font-size: 16px;
     font-weight: 500;
 }
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: calc(100% / 2 - 100px);
+    right: calc(100% / 2 - 50px);
+    background-color: var(--offWhite);
+    color: var(--black);
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    border-radius: 50px;
+    border: solid 2px var(--black);
+}
+.skip {
+    position: fixed;
+    top: calc(100% / 2 + 100px);
+    right: calc(100% / 2 - 60px);
+    width: 120px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    opacity: 0.4;
+}
+.buttonClickAnimation {
+    animation-name: clicked;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes clicked {
+    0% {
+        border: "none";
+        background-color: var(--black);
+        color: var(--offWhite);
+    }
+    15% {
+        border: solid var(--black) 2px;
+        background-color: var(--offWhite);
+        color: var(--black);
+    }
+    50% {
+        border: solid var(--black) 2px;
+        background-color: var(--offWhite);
+        color: var(--black);
+    }
+    100% {
+        border: "none";
+        background-color: var(--black);
+        color: var(--offWhite);
+    }
+}
 .startContainerAnimationExpand {
     animation-name: expandContainer;
     animation-duration: 1s;
