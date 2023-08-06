@@ -1,3 +1,4 @@
+let domain = "z3emmods.netlify.app"
 let lis = document.querySelectorAll("li");
 let liHome = lis[0];
 let liApps = lis[1];
@@ -35,7 +36,7 @@ let counter = setInterval(() => {
     sessionStorage.setItem("id", id);
     btn.addEventListener("click", function () {
       btn.classList.add("buttonClickAnimation");
-      location.href(`/ads_page_1.html?id=${id}`)
+      location.href(`${domain}/Apps/ads_page_1.html?id=${id}`)
       setTimeout(() => {
         btn.classList.remove("buttonClickAnimation");
       }, 2000);
