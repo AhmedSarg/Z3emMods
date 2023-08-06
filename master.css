@@ -27,14 +27,13 @@ header {
 ul {
     display: flex;
     list-style: none;
-    padding: 30px 10px 20px 10px;
-    justify-content: space-evenly;
+    padding: 30px 0px 20px 0px;
+    justify-content: space-around;
     align-items: center;
 }
 li {
     color: var(--white);
     font-size: 14px;
-    width: 86.2px;
     height: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
@@ -43,7 +42,6 @@ li:hover {
     animation-name: toolbarHover;
     animation-duration: 200ms;
     animation-timing-function: ease-in-out;
-    animation-play-state: running;
 }
 @keyframes toolbarHover {
     from {
