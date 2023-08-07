@@ -84,38 +84,37 @@ li:hover {
 }
 
 .container {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-    height: 700px;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 0px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background-color: var(--white);
-    height: 276px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 2px solid var(--black);
     border-radius: 10px;
     background-color: var(--black);
 }
 
 .img {
-    height: 80%;
-    width: 100%;
-    border-radius: 10px 10px 0px 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px 10px 30px 0px;
 }
 
 .details {
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: 40px;
     background-color: var(--black);
     text-align: start;
     justify-content: center;
@@ -123,10 +122,10 @@ li:hover {
 }
 
 h2 {
-    margin-right: 20px;
+    margin: 3px 5px 3px 5px;
     color: var(--white);
     font-family: "Rubik", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -179,6 +178,8 @@ h2 {
 }
 
 .cover {
+    object-fit:cover;
+    height: 200px;
     width: 100%;
 }
 
