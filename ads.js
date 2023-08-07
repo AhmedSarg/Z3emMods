@@ -25,7 +25,7 @@ document.head.appendChild(title);
 if (window.document.URL.includes("ads_page_2")) {
   let counterText = document.querySelector(".counter");
   let btn = document.querySelector(".skip");
-  let i = 1;
+  let i = 29;
   let counter = setInterval(() => {
     counterText.textContent = i;
     if (i === 0) {
