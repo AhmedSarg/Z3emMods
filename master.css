@@ -184,13 +184,14 @@ h2 {
 
 .item-page-title {
     display: flex;
-    padding: 20px 0px 20px 20px;
+    padding: 20px;
     color: var(--white);
     background-color: var(--black);
     font-size: 20px;
     font-family: "Rubik", sans-serif;
     font-weight: normal;
     align-items: center;
+    margin-top: -4px;
 }
 
 .icon-page {
