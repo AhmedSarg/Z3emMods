@@ -22,7 +22,14 @@ let title = document.createElement("title");
 title.textContent = itemName;
 document.head.appendChild(title)
 
-
+let btn = document.querySelector(".download");
+  btn.addEventListener("click", () => {
+    btn.classList.add("buttonClickAnimation");
+    window.location.assign("/ads_page_1.html");
+    setTimeout(() => {
+      btn.classList.remove("buttonClickAnimation");
+    }, 2000);
+  });
 
 
 

@@ -31,14 +31,15 @@ if (window.document.URL.includes("ads_page_2")) {
     if (i === 0) {
       clearInterval(counter);
       btn.style.opacity = 1;
-      btn.textContent = "Skip";
-      let ticket = Math.random().toFixed(5) * 100000;
-      sessionStorage.setItem("ticket", ticket);
+      btn.textContent = "تخطي";
+      // let ticket = Math.random().toFixed(5) * 100000;
+      // sessionStorage.setItem("ticket", ticket);
       btn.addEventListener("click", function () {
         btn.classList.add("buttonClickAnimation");
-        window.location.assign(
-          `/pages/kinemaster_modded_apk.html?ticket=${ticket}`
-        );
+        // window.location.assign(
+        //   `/pages/kinemaster_modded_apk.html?ticket=${ticket}`
+        // );
+        console.log("Redirected to download link")
         setTimeout(() => {
           btn.classList.remove("buttonClickAnimation");
         }, 2000);
@@ -50,6 +51,10 @@ if (window.document.URL.includes("ads_page_2")) {
 } else if (window.document.URL.includes("ads_page_1")) {
   let btn = document.querySelector(".continue");
   btn.addEventListener("click", () => {
+    btn.classList.add("buttonClickAnimation");
     window.location.assign("/ads_page_2.html");
+    setTimeout(() => {
+      btn.classList.remove("buttonClickAnimation");
+    }, 2000);
   });
 }

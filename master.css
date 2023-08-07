@@ -3,8 +3,8 @@
 }
 
 :root {
-    /* --primaryColorTemp1: #157145;
-    --primaryColorTemp2: #359165;
+    --primaryColor: #157145;
+    /* --primaryColorTemp2: #359165;
     --primaryColor: #353135;
     --secondaryColor: #57A773; */
     --white: #F1FAFF;
@@ -191,12 +191,60 @@ h2 {
     font-weight: normal;
 }
 
+.informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--offWhite);
+    border-bottom: solid 3px var(--black);
+    height: 150px;
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.base {
+    display: flex;
+}
+
+.info-ic {
+    margin-left: 10px;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.tag {
+    color: var(--black);
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+}
+
 .description {
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
     font-family: "Rubik", sans-serif;
     font-weight: normal;
     line-height: 30px;
+}
+
+.download {
+    width: 120px;
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    border-radius: 10px;
+    box-shadow: none;
+    border: none;
+    margin-right: calc(50% - 60px);
+    margin-top: 40px;
+    margin-bottom: 50px;
 }
 
 .buttonClickAnimation {
