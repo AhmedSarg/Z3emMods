@@ -69,7 +69,8 @@ gamesShow.addEventListener("click", function () {
 
 items.forEach(function (item) {
   item.addEventListener("click", function () {
-    window.sessionStorage.setItem("name", item.children[1].textContent)
-    window.location.assign("/ads_page_1.html");
+    let name = item.children[1].textContent
+    window.sessionStorage.setItem("name", name)
+    window.location.assign(`/pages/${name.replaceAll(" ", "_").toLowerCase() + ".html"}`);
   });
 });

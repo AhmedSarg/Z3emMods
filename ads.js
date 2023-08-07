@@ -37,7 +37,7 @@ if (window.document.URL.includes("ads_page_2")) {
       btn.addEventListener("click", function () {
         btn.classList.add("buttonClickAnimation");
         window.location.assign(
-          `/Apps/kine_master_modded_apk.html?ticket=${ticket}`
+          `/pages/kinemaster_modded_apk.html?ticket=${ticket}`
         );
         setTimeout(() => {
           btn.classList.remove("buttonClickAnimation");

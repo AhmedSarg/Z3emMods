@@ -106,7 +106,7 @@ li:hover {
     background-color: var(--black);
 }
 
-img {
+.img {
     height: 80%;
     width: 100%;
     border-radius: 10px 10px 0px 30px;
@@ -176,6 +176,27 @@ h2 {
     border-radius: 10px;
     box-shadow: none;
     border: none;
+}
+
+.cover {
+    width: 100%;
+}
+
+.item-page-title {
+    padding: 20px 0px 20px 20px;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+}
+
+.description {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    font-weight: normal;
+    line-height: 30px;
 }
 
 .buttonClickAnimation {
